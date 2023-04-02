@@ -35,7 +35,7 @@ svn export https://github.com/coolsnowwolf/luci/trunk/libs/luci-lib-ipkg
 svn export https://github.com/linkease/istore-ui/trunk/app-store-ui
 svn export https://github.com/immortalwrt/luci/trunk/applications/luci-app-nps
 svn export https://github.com/immortalwrt/luci/trunk/applications/luci-app-usb-printer
-
+svn export https://github.com/immortalwrt/packages/trunk/net/nps
 sed -i \
 -e 's?include \.\./\.\./\(lang\|devel\)?include $(TOPDIR)/feeds/packages/\1?' \
 -e 's?2. Clash For OpenWRT?3. Applications?' \
