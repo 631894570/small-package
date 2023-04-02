@@ -20,6 +20,21 @@ rm -rf *
 git clone --depth 1 https://github.com/jerrykuku/luci-theme-argon
 git clone --depth 1 https://github.com/jerrykuku/luci-app-argon-config
 git clone --depth 1 https://github.com/jerrykuku/luci-app-vssr
+git clone --depth 1 https://github.com/gngpp/luci-theme-design
+git clone --depth 1 https://github.com/gngpp/luci-app-design-config
+git clone --depth 1 https://github.com/Jason6111/luci-app-netdata
+git clone --depth 1 https://github.com/honwen/luci-app-aliddns
+
+svn export https://github.com/coolsnowwolf/luci/trunk/libs/luci-lib-ipkg
+svn export https://github.com/linkease/istore/trunk/luci
+svn export https://github.com/linkease/istore-ui/trunk/app-store-ui
+
+
+
+sed -i 's/luci-lib-ipkg/luci-base/g' luci-app-store/Makefile
+sed -i 's/("iStore"), 31/("应用商店"), 61/g' luci-app-store/luasrc/controller/store.lua
+sed -i 's/\(+luci-compat\)/\1 +luci-theme-argon/' luci-app-argon-config/Makefile
+sed -i 's/\(+luci-compat\)/\1 +luci-theme-design/' luci-app-design-config/Makefile
 
 #svn export https://github.com/coolsnowwolf/luci/trunk/libs/luci-lib-ipkg
 
