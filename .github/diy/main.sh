@@ -26,7 +26,7 @@ git clone --depth 1 https://github.com/Jason6111/luci-app-netdata
 git clone --depth 1 https://github.com/honwen/luci-app-aliddns
 git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall2 passwall2 && mv -n passwall2/luci-app-passwall2 ./;rm -rf passwall2
 git clone --depth 1 -b luci https://github.com/xiaorouji/openwrt-passwall passwall && mv -n passwall/luci-app-passwall ./;rm -rf passwall
-git clone --depth 1 -b packages https://github.com/xiaorouji/openwrt-passwall && cp ./openwrt-passwall ./;rm -rf openwrt-passwall
+git clone --depth 1 -b packages https://github.com/xiaorouji/openwrt-passwall openwrt-passwall && mv -n openwrt-passwall/* ./;rm -rf openwrt-passwall
 
 svn export https://github.com/coolsnowwolf/luci/trunk/libs/luci-lib-ipkg
 svn export https://github.com/linkease/istore/trunk/luci/luci-app-store
