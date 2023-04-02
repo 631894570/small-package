@@ -26,7 +26,7 @@ git clone --depth 1 https://github.com/Jason6111/luci-app-netdata
 git clone --depth 1 https://github.com/honwen/luci-app-aliddns
 
 svn export https://github.com/coolsnowwolf/luci/trunk/libs/luci-lib-ipkg
-svn export https://github.com/linkease/istore/trunk/luci
+svn export https://github.com/linkease/istore/trunk/luci/luci-app-store
 svn export https://github.com/linkease/istore-ui/trunk/app-store-ui
 
 
