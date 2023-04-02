@@ -24,13 +24,17 @@ git clone --depth 1 https://github.com/gngpp/luci-theme-design
 git clone --depth 1 https://github.com/gngpp/luci-app-design-config
 git clone --depth 1 https://github.com/Jason6111/luci-app-netdata
 git clone --depth 1 https://github.com/honwen/luci-app-aliddns
+git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall2 passwall2 && mv -n passwall2/luci-app-passwall2 ./;rm -rf passwall2
+git clone --depth 1 -b luci https://github.com/xiaorouji/openwrt-passwall passwall && mv -n passwall/luci-app-passwall ./;rm -rf passwall
+git clone --depth 1 -b packages https://github.com/xiaorouji/openwrt-passwall && cp ./openwrt-passwall ./;rm -rf openwrt-passwall
 
 svn export https://github.com/coolsnowwolf/luci/trunk/libs/luci-lib-ipkg
 svn export https://github.com/linkease/istore/trunk/luci/luci-app-store
 svn export https://github.com/linkease/istore-ui/trunk/app-store-ui
 
 
-
+mv -n openwrt-passwall/* ./ ; rm -Rf openwrt-passwall
+mv -n openwrt-package/* ./ ; rm -Rf openwrt-package
 sed -i 's/luci-lib-ipkg/luci-base/g' luci-app-store/Makefile
 sed -i 's/("iStore"), 31/("应用商店"), 61/g' luci-app-store/luasrc/controller/store.lua
 sed -i 's/\(+luci-compat\)/\1 +luci-theme-argon/' luci-app-argon-config/Makefile
