@@ -33,6 +33,8 @@ git clone --depth 1 -b packages https://github.com/xiaorouji/openwrt-passwall op
 
 svn export https://github.com/coolsnowwolf/luci/trunk/libs/luci-lib-ipkg
 svn export https://github.com/linkease/istore-ui/trunk/app-store-ui
+svn export https://github.com/immortalwrt/luci/trunk/applications/luci-app-nps
+svn export https://github.com/immortalwrt/luci/trunk/applications/luci-app-usb-printer
 
 sed -i \
 -e 's?include \.\./\.\./\(lang\|devel\)?include $(TOPDIR)/feeds/packages/\1?' \
