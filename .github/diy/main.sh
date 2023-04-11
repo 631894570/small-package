@@ -57,6 +57,5 @@ sed -i 's/\(+luci-compat\)/\1 +luci-theme-design/' luci-app-design-config/Makefi
 #net/qBittorrent-static net/qBittorrent libs/qtbase libs/qttools libs/rblibtorrent \
 #net/uugamebooster net/verysync net/dnsforwarder net/nps net/tcpping
 
-
 exit 0
 
