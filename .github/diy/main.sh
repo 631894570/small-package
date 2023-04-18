@@ -17,14 +17,14 @@ mv -n `find $1/* -maxdepth 0 -type d` ./
 rm -rf $1
 }
 rm -rf *
-git clone --depth 1 https://github.com/jerrykuku/luci-theme-argon
-git clone --depth 1 https://github.com/jerrykuku/luci-app-argon-config
-git clone --depth 1 https://github.com/jerrykuku/luci-app-vssr
-git clone --depth 1 -b js https://github.com/gngpp/luci-theme-design
-git clone --depth 1 https://github.com/gngpp/luci-app-design-config
-git clone --depth 1 https://github.com/honwen/luci-app-aliddns
-git clone --depth 1 https://github.com/jerrykuku/lua-maxminddb
-git clone --depth 1 https://github.com/linkease/istore && mv -n istore/luci/* ./; rm -rf istore
+git clone --depth 1 https://github.com/jerrykuku/luci-theme-argon luci-theme-argon
+git clone --depth 1 https://github.com/jerrykuku/luci-app-argon-config luci-app-argon-config
+git clone --depth 1 https://github.com/jerrykuku/luci-app-vssr luci-app-vssr
+git clone --depth 1 -b js https://github.com/gngpp/luci-theme-design luci-theme-design
+git clone --depth 1 https://github.com/gngpp/luci-app-design-config luci-app-design-config
+git clone --depth 1 https://github.com/honwen/luci-app-aliddns luci-app-aliddns
+git clone --depth 1 https://github.com/jerrykuku/lua-maxminddb lua-maxminddb
+git clone --depth 1 https://github.com/linkease/istore istore && mv -n istore/luci/* ./; rm -rf istore
 
 git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall2 passwall2 && mv -n passwall2/luci-app-passwall2 ./;rm -rf passwall2
 git clone --depth 1 -b luci https://github.com/xiaorouji/openwrt-passwall passwall && mv -n passwall/luci-app-passwall ./;rm -rf passwall
