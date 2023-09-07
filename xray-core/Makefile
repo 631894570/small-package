@@ -1,6 +1,6 @@
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=Xray-core
+PKG_NAME:=xray-core
 PKG_VERSION:=1.8.4
 PKG_RELEASE:=1
 
@@ -12,13 +12,13 @@ PKG_MAINTAINER:=Tianling Shen <cnsztl@immortalwrt.org>
 PKG_LICENSE:=MPL-2.0
 PKG_LICENSE_FILES:=LICENSE
 
+PKG_BUILD_DIR:=$(BUILD_DIR)/Xray-core-$(PKG_VERSION)
 PKG_BUILD_DEPENDS:=golang/host
 PKG_BUILD_PARALLEL:=1
 PKG_USE_MIPS16:=0
-PKG_BUILD_FLAGS:=no-mips16
 
 GO_PKG:=github.com/xtls/xray-core
-GO_PKG_BUILD_PKG:=$(GO_PKG)/main
+GO_PKG_BUILD_PKG:=github.com/xtls/xray-core/main
 GO_PKG_LDFLAGS_X:= \
 	$(GO_PKG)/core.build=OpenWrt \
 	$(GO_PKG)/core.version=$(PKG_VERSION)
