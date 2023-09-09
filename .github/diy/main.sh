@@ -22,7 +22,7 @@ git clone --depth 1 https://github.com/kenzok8/small
 mv openwrt-packages/* ./
 mv small/* ./
 rm -rf openwrt-packages small
-git clone --depth 1 https://github.com/animegasan/luci-app-quickstart luci-app-quickstart
+svn export https://github.com/linkease/nas-packages-luci/trunk/luci/luci-app-quickstart luci-app-quickstart
 svn export https://github.com/linkease/nas-packages/trunk/network/services/quickstart quickstart
 
 exit 0
