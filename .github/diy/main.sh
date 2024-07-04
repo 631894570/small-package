@@ -49,7 +49,7 @@ sed -i \
 -e 's/php7/php8/g' \
 -e 's/+docker /+docker +dockerd /g' \
 */Makefile
-
+#
 sed -i 's/luci-lib-ipkg/luci-base/g' luci-app-store/Makefile
 sed -i 's/+dockerd/+dockerd +cgroupfs-mount/' luci-app-docker*/Makefile
 sed -i '$i /etc/init.d/dockerd restart &' luci-app-docker*/root/etc/uci-defaults/*
