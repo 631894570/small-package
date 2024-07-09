@@ -19,8 +19,6 @@ rm -rf $1
 git clone --depth 1 https://github.com/yaof2/luci-app-ikoolproxy
 git clone --depth 1 https://github.com/jerrykuku/luci-theme-argon
 git clone --depth 1 https://github.com/jerrykuku/luci-app-argon-config
-git clone --depth 1 https://github.com/MilesPoupart/luci-app-vssr
-#svn export https://github.com/coolsnowwolf/openwrt-package/trunk/package
 git clone --depth 1 https://github.com/gngpp/luci-theme-design
 git clone --depth 1 https://github.com/gngpp/luci-app-design-config
 git clone --depth 1 https://github.com/jerrykuku/lua-maxminddb
