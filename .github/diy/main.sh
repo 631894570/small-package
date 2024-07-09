@@ -22,6 +22,9 @@ git clone --depth 1 https://github.com/jerrykuku/luci-app-argon-config
 git clone --depth 1 https://github.com/gngpp/luci-theme-design
 git clone --depth 1 https://github.com/gngpp/luci-app-design-config
 git clone --depth 1 https://github.com/jerrykuku/lua-maxminddb
+#openclash
+git clone --depth 1 https://github.com/vernesong/OpenClash && mv -n OpenClash/luci-app-openclash ./; rm -rf OpenClash
+sed -i 's/+libcap /+libcap +libcap-bin /' luci-app-openclash/Makefile
 #adguardhome
 git clone --depth 1 https://github.com/sirpdboy/sirpdboy-package && mv -n sirpdboy-package/*adguardhome* ./ ; rm -rf sirpdboy-package
 #homeproxy
